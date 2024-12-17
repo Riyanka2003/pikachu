@@ -1,0 +1,38 @@
+* {
+    cursor: none
+    }
+    body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .loading {
+    background-color: #ffffff;
+    display: fixed
+    }
+    .loading img {
+    display: block;
+    min-width: 500px;
+    min-height: 500px;
+    }
+    .mouse {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #fef240;
+    position: absolute;
+    animation: mouseAnimation .5s infinite ease-in-out alternate;
+    left: 0;
+    top: 0
+    }
+    @keyframes mouseAnimation {
+    from {
+    width: 15px;
+    height: 15px
+    }
+    to {
+    width: 15px;
+    height: 15px
+    }
+    }
